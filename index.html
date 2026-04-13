@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/19c442b1a8.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <title>Pedro Vercesi | Developer</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="container navbar">
+        <div class="navbar-logo"><a href="#">Pedro Vercesi</a></div>
+        <ul class="navbar-links">
+          <li><a href="#sobre_mi">Sobre mí</a></li>
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+        </ul>
+        <a class="btn btn-secondary navbar-cta" href="#contacto">Contacto</a>
+        <div class="navbar-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+
+      <div class="dropdown-menu">
+        <ul>
+          <li><a href="#sobre_mi">Sobre mí</a></li>
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+        </ul>
+
+        <a class="btn btn-secondary navbar-cta" href="#contacto">Contacto</a>
+      </div>
+    </header>
+
+    <!-- SECTION HERO -->
+
+    <section id="hero" class="hero">
+      <div class="hero-content container">
+        <div class="hero-left">
+          <h1 class="heading-xl">Pedro Vercesi</h1>
+          <h2 class="heading-lg">Frontend Developer</h2>
+
+          <div class="hero-btns">
+            <a href="#contacto" class="btn btn-primary">Contacto</a>
+            <a href="#proyectos" class="btn btn-secondary">Proyectos</a>
+          </div>
+
+          <div class="hero-social">
+            <a
+              href="https://github.com/Pedro-Vercesi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/pedro-vercesi/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <img src="assets/perfil.jpg" alt="Pedro Vercesi" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION SOBRE MÍ -->
+
+    <section id="sobre_mi" class="section sobre_mi">
+      <div class="container sobre_mi-content">
+        <h3 class="heading-md">Sobre Mí</h3>
+        <div class="sobre_mi-body">
+          <div class="sobre_mi-left">
+            <p class="text-body">
+              Construyo interfaces frontend con React y TypeScript funcionales,
+              limpias, y con la misma atención al detalle que apliqué durante
+              años trabajando con música. Durante más de una década trabajé como
+              director de orquesta. Esa carrera me enseñó cosas que no caben
+              fácilmente en un CV: cómo sostener un sistema complejo en la
+              cabeza mientras tomás decisiones en tiempo real, cómo colaborar
+              con equipos grandes bajo presión, y cómo un error pequeño en una
+              capa puede romper todo lo que viene después. Cuando empecé a
+              programar, reconocí esa dinámica de inmediato.
+            </p>
+            <a href="assets/cv.pdf" download class="btn btn-secondary"
+              >Descargar CV</a
+            >
+          </div>
+          <div class="sobre_mi-right">
+            <img src="assets/about-pic.jpg" alt="Pedro Vercesi" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STACK -->
+
+    <section id="stack" class="section stack">
+      <div class="container stack-content">
+        <h3 class="heading-md">Stack</h3>
+        <div class="stack-grid">
+          <div class="stack-item">
+            <i class="devicon-html5-plain colored"></i>
+            <span>HTML5</span>
+          </div>
+          <div class="stack-item">
+            <i class="devicon-css3-plain colored"></i>
+            <span>CSS3</span>
+          </div>
+          <div class="stack-item">
+            <i class="devicon-tailwindcss-plain colored"></i>
+            <span>Tailwind</span>
+          </div>
+          <div class="stack-item">
+            <i class="devicon-javascript-plain colored"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="stack-item">
+            <i class="devicon-react-original colored"></i>
+            <span>React</span>
+          </div>
+          <div class="stack-item">
+            <i class="devicon-typescript-plain colored"></i>
+            <span>TypeScript</span>
+          </div>
+          <div class="stack-item">
+            <i class="devicon-github-original"></i>
+            <span>GitHub</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+
+    <section id="proyectos" class="proyectos section">
+      <div class="proyectos-content container">
+        <h3 class="heading-md">Proyectos</h3>
+
+        <div class="proyectos-cards">
+          <div class="proyectos-card">
+            <img src="assets/flashcard.jpg" alt="flashcards" />
+            <div class="proyectos-card-info">
+              <h4 class="heading-sm">Flascards-Teoría Musical</h4>
+              <p class="text-body">Flascards de teoría musical</p>
+              <div class="proyectos-card-links">
+                <a
+                  class="btn btn-secondary"
+                  href="https://github.com/Pedro-Vercesi/music-theory-flashcards.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Repositorio</a
+                >
+                <a
+                  class="btn btn-secondary"
+                  href="https://music-theory-flashcards.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Demo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="proyectos-card">
+            <img src="assets/metronomo.jpg" alt="metronomo" />
+            <div class="proyectos-card-info">
+              <h4 class="heading-sm">Metrónomo</h4>
+              <p class="text-body">Metrónomo con tap tempo</p>
+              <div class="proyectos-card-links">
+                <a
+                  class="btn btn-secondary"
+                  href="https://github.com/Pedro-Vercesi/metronome-app.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Repositorio</a
+                >
+                <a
+                  class="btn btn-secondary"
+                  href="https://metronome-lite.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Demo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="proyectos-card">
+            <img src="assets/crypto.jpg" alt="crypto dash" />
+            <div class="proyectos-card-info">
+              <h4 class="heading-sm">Crypto Dash</h4>
+              <p class="text-body">SPA de cryptomonedas</p>
+              <div class="proyectos-card-links">
+                <a
+                  class="btn btn-secondary"
+                  href="https://github.com/Pedro-Vercesi/crypto-dash.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Repositorio</a
+                >
+                <a
+                  class="btn btn-secondary"
+                  href="https://crypto-dash-spaweb.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Demo</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto section">
+      <div class="container contacto-content">
+        <h3 class="heading-md">Contacto</h3>
+        <form
+          action="https://formspree.io/f/xgopgbdn"
+          method="POST"
+          class="contacto-form"
+        >
+          <div class="form-group">
+            <label for="email">Tu email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="nombre@email.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Tu mensaje</label>
+            <textarea
+              name="message"
+              id="message"
+              rows="6"
+              placeholder="Escribí tu mensaje acá..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer">
+      <div class="footer-content container">
+        <div class="footer-left">
+          <h3 class="text-muted">&copy; 2025 Pedro Vercesi</h3>
+        </div>
+
+        <div class="footer-right">
+          <div class="footer-links">
+            <a
+              href="https://github.com/Pedro-Vercesi?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/pedro-vercesi/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <a href="mailto:info@pedrovercesi.com" class="text-muted"
+            >info@pedrovercesi.com</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const toggleBtn = document.querySelector(".navbar-toggle");
+      const toggleBtnIcon = document.querySelector(".navbar-toggle i");
+      const dropdownMenu = document.querySelector(".dropdown-menu");
+
+      toggleBtn.addEventListener("click", function () {
+        dropdownMenu.classList.toggle("open");
+        const isOpen = dropdownMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      });
+    </script>
+  </body>
+</html>
