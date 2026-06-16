@@ -10,6 +10,8 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="script.js" defer></script>
+
     <link
       rel="icon"
       type="image/png"
@@ -41,26 +43,26 @@
     <header>
       <nav class="container navbar">
         <div class="navbar-logo"><a href="#">Pedro Vercesi</a></div>
-        <ul class="navbar-links">
-          <li><a href="#sobre_mi">Sobre mí</a></li>
-          <li><a href="#stack">Stack</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-        </ul>
-        <a class="btn btn-secondary navbar-cta" href="#contacto">Contacto</a>
-        <div class="navbar-toggle">
-          <i class="fa-solid fa-bars"></i>
+
+        <div class="navbar-menu">
+          <ul class="navbar-links">
+            <li><a href="#sobre_mi">Sobre mí</a></li>
+            <li><a href="#stack">Stack</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+          </ul>
+          <a class="btn btn-secondary navbar-cta" href="#contacto">Contacto</a>
         </div>
+
+        <button
+          class="navbar-toggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </nav>
 
-      <div class="dropdown-menu">
-        <ul>
-          <li><a href="#sobre_mi">Sobre mí</a></li>
-          <li><a href="#stack">Stack</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-        </ul>
-
-        <a class="btn btn-secondary navbar-cta" href="#contacto">Contacto</a>
-      </div>
+      <div class="nav-overlay"></div>
     </header>
 
     <!-- SECTION HERO -->
@@ -106,31 +108,29 @@
       <div class="container sobre_mi-content">
         <h3 class="heading-md">Sobre Mí</h3>
         <div class="sobre_mi-body">
-          <div class="sobre_mi-left">
-            <p class="text-body">
-              Construyo interfaces frontend con React y TypeScript funcionales,
-              limpias, y con la misma atención al detalle que apliqué durante
-              años trabajando con música. Durante más de una década trabajé como
-              director de orquesta. Esa carrera me enseñó cosas que no caben
-              fácilmente en un CV: cómo sostener un sistema complejo en la
-              cabeza mientras tomás decisiones en tiempo real, cómo colaborar
-              con equipos grandes bajo presión, y cómo un error pequeño en una
-              capa puede romper todo lo que viene después. Cuando empecé a
-              programar, reconocí esa dinámica de inmediato. La música también
-              me entrenó en algo menos obvio: el equilibrio, la proporción, el
-              peso visual de cada elemento. Este criterio, ahora lo aplico al
-              frontend.
-            </p>
-            <a
-              href="assets/PedroVercesi_CV.pdf"
-              download="PedroVercesi_CV.pdf"
-              class="btn btn-secondary"
-              >Descargar CV</a
-            >
-          </div>
-          <div class="sobre_mi-right">
+          <p class="text-body">
+            Construyo interfaces frontend con React y TypeScript funcionales,
+            limpias, y con la misma atención al detalle que apliqué durante años
+            trabajando con música. Durante más de una década trabajé como
+            director de orquesta. Esa carrera me enseñó cosas que no caben
+            fácilmente en un CV: cómo sostener un sistema complejo en la cabeza
+            mientras tomás decisiones en tiempo real, cómo colaborar con equipos
+            grandes bajo presión, y cómo un error pequeño en una capa puede
+            romper todo lo que viene después. Cuando empecé a programar,
+            reconocí esa dinámica de inmediato. La música también me entrenó en
+            algo menos obvio: el equilibrio, la proporción, el peso visual de
+            cada elemento. Este criterio, ahora lo aplico al frontend.
+          </p>
+          <a
+            href="assets/PedroVercesi_CV.pdf"
+            download="PedroVercesi_CV.pdf"
+            class="btn btn-secondary"
+            >Descargar CV</a
+          >
+
+          <!-- <div class="sobre_mi-right">
             <img src="assets/about-pic.jpg" alt="Pedro Vercesi" />
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -181,21 +181,24 @@
 
         <div class="proyectos-cards">
           <div class="proyectos-card">
-            <img src="assets/flashcard.jpg" alt="flashcards" />
+            <img src="assets/ideadrop.jpg" alt="IdeaDrop" />
             <div class="proyectos-card-info">
-              <h4 class="heading-sm">Learn Music Theory</h4>
-              <p class="text-body">Flashcards de teoría musical</p>
+              <h4 class="heading-sm">IdeaDrop</h4>
+              <p class="text-body">
+                App full-stack MERN para compartir ideas de proyectos, con
+                autenticación JWT
+              </p>
               <div class="proyectos-card-links">
                 <a
                   class="btn btn-secondary"
-                  href="https://github.com/Pedro-Vercesi/music-theory-flashcards.git"
+                  href="https://github.com/Pedro-Vercesi/idea-drop-ui"
                   target="_blank"
                   rel="noopener noreferrer"
                   >Repositorio</a
                 >
                 <a
                   class="btn btn-secondary"
-                  href="https://music-theory-flashcards.netlify.app/"
+                  href="https://idea-drop.netlify.app"
                   target="_blank"
                   rel="noopener noreferrer"
                   >Demo</a
@@ -317,20 +320,5 @@
         </div>
       </div>
     </footer>
-
-    <script>
-      const toggleBtn = document.querySelector(".navbar-toggle");
-      const toggleBtnIcon = document.querySelector(".navbar-toggle i");
-      const dropdownMenu = document.querySelector(".dropdown-menu");
-
-      toggleBtn.addEventListener("click", function () {
-        dropdownMenu.classList.toggle("open");
-        const isOpen = dropdownMenu.classList.contains("open");
-
-        toggleBtnIcon.classList = isOpen
-          ? "fa-solid fa-xmark"
-          : "fa-solid fa-bars";
-      });
-    </script>
   </body>
 </html>
